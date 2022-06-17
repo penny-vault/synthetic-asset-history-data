@@ -1,0 +1,550 @@
+# Penny Vault Data Accession List
+# Last Updated: 2022-06-16 (J. Fergason)
+
+# Bonds
+
+["SHY+"]
+Symbol = "SHY+"
+Name = "Treasuries 1-3 Years"
+Category = "Short-Term Bond"
+StartDate = 1976-06-02
+FIGI = "PVGBS1HSMJS9"
+
+[["SHY+".Source]]
+Symbol = "FRED: DGS1 + DGS2 + DGS3"
+From = 1976-06-02
+To = 1991-10-28
+Sources = ["https://fred.stlouisfed.org/series/DGS1", "https://fred.stlouisfed.org/series/DGS2", "https://fred.stlouisfed.org/series/DGS3"]
+
+[["SHY+".Source]]
+Symbol = "VFISX"
+From = 1991-10-29
+To = 2002-07-26
+Sources = ["https://api.tiingo.com/tiingo/daily/VFISX/prices"]
+
+[["SHY+".Source]]
+Symbol = "SHY"
+From = 2002-07-29
+Sources = ["https://api.tiingo.com/tiingo/daily/SHY/prices"]
+
+
+["IEI+"]
+Symbol = "IEI+"
+Name = "Treasuries 3-7 Years"
+Category = "Intermediate-Term Bond"
+StartDate = 1969-07-02
+FIGI = "PVGVW0YW6FZ9"
+
+[["IEI+".Source]]
+Symbol = "FRED: DGS3 + DGS5 + DGS7"
+From = 1969-07-02
+To = 1991-10-28
+Sources = ["https://fred.stlouisfed.org/series/DGS3", "https://fred.stlouisfed.org/series/DGS5", "https://fred.stlouisfed.org/series/DGS7"]
+
+[["IEI+".Source]]
+Symbol = "VFITX"
+From = 1991-10-29
+To = 2007-01-11
+Sources = ["https://api.tiingo.com/tiingo/daily/VFITX/prices"]
+
+[["IEI+".Source]]
+Symbol = "IEI"
+From = 2007-01-12
+
+
+["IEF+"]
+Symbol = "IEF+"
+Name = "Treasuries 7-10 Years"
+Category = "Intermediate-Term Bond"
+StartDate = 1969-07-02
+FIGI = "PVG90PVRWZN4"
+
+[["IEF+".Source]]
+Symbol = "FRED: DGS7 + DGS10"
+From = 1969-07-02
+To = 2002-07-28
+Sources = ["https://fred.stlouisfed.org/series/DGS7", "https://fred.stlouisfed.org/series/DGS10"]
+
+[["IEF+".Source]]
+Symbol = "IEF"
+From = 2002-07-29
+Sources = ["https://api.tiingo.com/tiingo/daily/IEF/prices"]
+
+
+["GNMA+"]
+Symbol = "GNMA+"
+Name = "GNMA Bonds"
+Category = "Intermediate-Term Bond"
+StartDate = 1980-06-30
+FIGI = "PVGNZ97VGYX1"
+
+[["GNMA+".Source]]
+Symbol = "VFIIX"
+From = 1980-06-30
+To = 2012-02-21
+Sources = ["https://api.tiingo.com/tiingo/daily/VFIIX/prices"]
+
+[["GNMA+".Source]]
+Symbol = "GNMA"
+From = 2012-02-22
+Sources = ["https://api.tiingo.com/tiingo/daily/GNMA/prices"]
+
+
+["TLH+"]
+Symbol = "TLH+"
+Name = "Treasuries 10-20 Years"
+Category = "Long-Term Bond"
+StartDate = 1962-01-03
+FIGI = "PVGNPSP592Y3"
+
+[["TLH+".Source]]
+Symbol = "FRED: DGS10 + DGS20"
+From = 1962-01-03
+To = 2007-01-11
+
+[["TLH+".Source]]
+Symbol = "TLH"
+From = 2007-01-12
+
+
+["TLT+"]
+Symbol = "TLT+"
+Name = "Treasuries 20+ Years"
+Category = "Long-Term Bond"
+StartDate = 1977-02-26
+FIGI = "PVGC99K00WW7"
+
+[["TLT+".Source]]
+Symbol = "FRED: DGS20 + DGS30"
+From = 1977-02-26
+To = 1986-05-19
+
+[["TLT+".Source]]
+Symbol = "VUSTX"
+From = 1986-05-20
+To = 2002-07-26
+
+[["TLT+".Source]]
+Symbol = "TLT"
+From = 2002-07-29
+
+
+["HYG+"]
+Symbol = "HYG+"
+Name = "High-Yield Corporate Bond"
+Category = "Corporate Bond"
+StartDate = 1980-01-03
+FIGI = "PVG8713V3MM1"
+
+[["HYG+".Source]]
+Symbol = "VWEHX"
+From = 1980-01-03
+To = 2007-04-11
+
+[["HYG+".Source]]
+Symbol = "HYG"
+From = 2007-04-12
+
+
+["LQD+"]
+Symbol = "LQD+"
+Name = "Investment Grade Corporate Bonds"
+Category = "Corporate Bond"
+StartDate = 1928-02-02
+FIGI = "PVG0BHK6B9P5"
+
+[["LQD+".Source]]
+Symbol = "FRED: AAA"
+From = 1928-02-02
+To = 1972-01-03
+
+[["LQD+".Source]]
+Symbol = "ACCBX"
+From = 1972-01-04
+To = 2002-07-26
+
+[["LQD+".Source]]
+Symbol = "LQD"
+From = 2002-07-29
+
+
+["AGG+"]
+Symbol = "AGG+"
+Name = "Aggregate Bond"
+Category = "Total Bond Market"
+StartDate = 1971-10-04
+FIGI = "PVGR8P98HN69"
+
+[["AGG+".Source]]
+Symbol = "FBNDX"
+From = 1971-10-04
+To = 2003-09-26
+
+[["AGG+".Source]]
+Symbol = "AGG"
+From = 2003-09-29
+
+# US Equities
+
+["SPY+"]
+Symbol = "SPY+"
+Name = "S&P 500"
+Category = "US Large-Blend"
+StartDate = 1928-01-04
+FIGI = "PVGCXBJGBLX6"
+
+[["SPY+".Source]]
+Symbol = "GSPC"
+From = 1928-01-04
+To = 1993-01-29
+
+[["SPY+".Source]]
+Symbol = "SPY"
+From = 1992-02-01
+
+
+["QQQ+"]
+Symbol = "QQQ+"
+Name = "Nasdaq"
+Category = "US Large-Growth"
+StartDate = 1971-02-08
+FIGI = "PVG0TP2Q1ZR1"
+
+[["QQQ+".Source]]
+Symbol = "^IXIC"
+From = 1971-02-08
+To = 1999-03-10
+
+[["QQQ+".Source]]
+Symbol = "QQQ"
+From = 1999-03-11
+
+
+["IWD+"]
+Symbol = "IWD+"
+Name = "Russell 1000 Value"
+Category = "Large-Cap Value"
+StartDate = 1980-01-03
+FIGI = "PVGCK88VP666"
+
+[["IWD+".Source]]
+Symbol = "DODGX"
+From = 1980-01-03
+To = 1985-12-30
+
+[["IWD+".Source]]
+Symbol = "FGRIX"
+From = 1985-12-31
+To = 1992-10-30
+
+[["IWD+".Source]]
+Symbol = "VIVAX"
+From = 1992-11-02
+To = 2000-05-26
+
+[["IWD+".Source]]
+Symbol = "IWD"
+From = 2000-05-30
+
+
+["IWF+"]
+Symbol = "IWF+"
+Name = "Russell 1000 Growth"
+Category = "Large-Cap Growth"
+StartDate = 1979-01-03
+FIGI = "PVG3D7DMX6N6"
+
+[["IWF+".Source]]
+Symbol = "^RLGTR"
+From = 1979-01-03
+To = 2000-05-26
+
+[["IWF+".Source]]
+Symbol = "IWF"
+From = 2000-05-30
+
+
+["IWR+"]
+Symbol = "IWR+"
+Name = "Russell Mid-Cap"
+Category = "Mid-Cap Blend"
+StartDate = 1979-01-03
+FIGI = "PVGK85B5MYK9"
+
+[["IWR+".Source]]
+Symbol = "^RMCTR"
+From = 1979-01-03
+To = 2001-07-20
+
+[["IWR+".Source]]
+Symbol = "IWR"
+From = 2001-07-23
+
+
+["IWP+"]
+Symbol = "IWP+"
+Name = "Mid-Cap Growth"
+Category = "Mid-Cap Growth"
+StartDate = 1985-12-31
+FIGI = "PVGZ6FXR3YN8"
+
+[["IWP+".Source]]
+Symbol = "^RDGTR"
+From = 1985-12-31
+To = 2001-08-01
+
+[["IWP+".Source]]
+Symbol = "IWP"
+From = 2001-08-02
+
+
+["IWS+"]
+Symbol = "IWS+"
+Name = "Mid-Cap Value"
+Category = "Mid-Cap Value"
+StartDate = 1985-12-31
+FIGI = "PVGCDG16MSW1"
+
+[["IWS+".Source]]
+Symbol = "^RWMTR"
+From = 1985-12-31
+To = 2001-07-24
+
+[["IWS+".Source]]
+Symbol = "IWS"
+From = 2001-07-25
+
+
+["IWM+"]
+Symbol = "IWM+"
+Name = "Russell 2000"
+Category = "US Small-Cap"
+StartDate = 1975-01-03
+FIGI = "PVGLD1WBNGD4"
+
+[["IWM+".Source]]
+Symbol = "Independence International Small Cap Index"
+From = 1975-01-03
+To = 1980-01-02
+
+[["IWM+".Source]]
+Symbol = "^RUTTR"
+From = 1978-12-28
+To = 2000-05-26
+
+[["IWM+".Source]]
+Symbol = "IWM"
+From = 2000-05-30
+
+
+["IWN+"]
+Symbol = "IWN+"
+Name = "Small-Cap Value"
+Category = "Small-Cap Value"
+StartDate = 1978-12-29
+FIGI = "PVGMTG00SVM4"
+
+[["IWN+".Source]]
+Symbol = "^RUJTR"
+From = 1978-12-29
+To = 2000-07-28
+
+[["IWN+".Source]]
+Symbol = "IWN"
+From = 2000-07-31
+
+
+["IWO+"]
+Symbol = "IWO+"
+Name = "Small-Cap Growth"
+Category = "Small-Cap Growth"
+StartDate = 1978-12-29
+FIGI = "PVG491M93Y74"
+
+[["IWO+".Source]]
+Symbol = "^RUOTR"
+From = 1978-12-29
+To = 2000-07-28
+
+[["IWO+".Source]]
+Symbol = "IWO"
+From = 2007-07-31
+
+# International
+
+["VGK+"]
+Symbol = "VGK+"
+Name = "FTSE Europe"
+Category = "International Europe"
+StartDate = 1975-01-03
+FIGI = "PVG4NCKGTZS6"
+
+[["VGK+".Source]]
+Symbol = "Independence International Europe Index"
+From = 1975-01-03
+To = 1990-06-18
+Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaeurm.txt"]
+
+[["VGK+".Source]]
+Symbol = "VEURX"
+From = 1990-06-19
+To = 2001-08-13
+
+[["VGK+".Source]]
+Symbol = "VEUSX"
+From = 2001-08-14
+To = 2005-03-10
+
+[["VGK+".Source]]
+Symbol = "VGK"
+From = 2005-03-11
+
+
+["SCZ+"]
+Symbol = "SCZ+"
+Name = "International Small-Cap"
+Category = "International Small-Cap Blend"
+StartDate = 1975-01-03
+FIGI = "PVGKG08C5W96"
+
+[["SCZ+".Source]]
+Symbol = "Independence International Small Cap Ex-US"
+From = 1975-01-03
+To = 1996-11-04
+Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaints.txt"]
+
+[["SCZ+".Source]]
+Symbol = "VINEX"
+From = 1996-11-05
+To = 2007-12-12
+
+[["SCZ+".Source]]
+Symbol = "SCZ"
+From = 2007-12-13
+
+
+["FSG+"]
+Symbol = "FSG+"
+Name = "International Small-Cap Growth"
+Category = "International Small-Cap Growth"
+StartDate = 1975-01-03
+FIGI = "PVGXSMCNRD08"
+
+[["FSG+".Source]]
+Symbol = "Independence International Small Cap Growth Ex-US"
+From = 1975-01-03
+To = 1989-01-03
+Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaintsg.txt"]
+
+[["FSG+".Source]]
+Symbol = "PRIDX"
+From = 1989-01-04
+To = 2016-01-04
+
+[["FSG+".Source]]
+Symbol = "WCMSX"
+From = 2016-01-05
+
+
+["EEM+"]
+Symbol = "EEM+"
+Name = "Emerging Markets"
+Category = "Emerging Markets"
+StartDate = 1989-09-01
+FIGI = "PVGG715YBQJ0"
+
+[["EEM+".Source]]
+Symbol = "MADCX"
+From = 1989-09-01
+To = 1994-04-22
+
+[["EEM+".Source]]
+Symbol = "DFEMX"
+From = 1994-04-25
+To = 2003-04-14
+
+[["EEM+".Source]]
+Symbol = "EEM"
+From = 2003-04-15
+
+
+["EWJ+"]
+Symbol = "EWJ+"
+Name = "Japan Fund"
+Category = "International Japan"
+StartDate = 1975-01-03
+FIGI = "PVG3LL7S8FV5"
+
+[["EWJ+".Source]]
+Symbol = "Independence International Japan Index"
+From = 1975-01-03
+To = 1992-01-02
+Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiajpym.txt"]
+
+[["EWJ+".Source]]
+Symbol = "PRJPX"
+From = 1992-01-03
+To = 1996-04-01
+
+[["EWJ+".Source]]
+Symbol = "EWJ"
+From = 1996-04-02
+
+# Alternatives
+
+["IYR+"]
+Symbol = "IYR+"
+Name = "Real Estate"
+Category = "US Real Estate"
+StartDate = 1980-01-30
+FIGI = "PVGVN570L7Y5"
+
+[["IYR+".Source]]
+Symbol = "STMDX"
+From = 1980-01-30
+To = 1996-05-13
+
+[["IYR+".Source]]
+Symbol = "VGSIX"
+From = 1996-05-14
+To = 2000-06-19
+
+[["IYR+".Source]]
+Symbol = "IYR"
+From = 2000-06-20
+
+# Commodities
+
+["GSG+"]
+Symbol = "GSG+"
+Name = "Commodities"
+Category = "Commodities"
+StartDate = 1970-01-02
+FIGI = "PVGW9LGNKY45"
+
+[["GSG+".Source]]
+Symbol = "S&P GSCI"
+From = 1970-01-02
+To = 2006-07-21
+Sources = ["https://tradingeconomics.com/commodity/gsci"]
+
+[["GSG+".Source]]
+Symbol = "GSG"
+From = 2006-07-24
+
+
+["GLD+"]
+Symbol = "GLD+"
+Name = "Gold"
+Category = "Commodities"
+StartDate = 1960-02-29
+FIGI = "PVGL2ZZ1RYP6"
+
+[["GLD+".Source]]
+Symbol = "INIVX"
+From = 1960-02-29
+To = 2004-11-18
+
+[["GLD+".Source]]
+Symbol = "GLD"
+From = 2004-11-19
