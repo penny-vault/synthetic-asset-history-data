@@ -8,24 +8,27 @@ Symbol = "SHY+"
 Name = "Treasuries 1-3 Years"
 Category = "Short-Term Bond"
 StartDate = 1976-06-02
-FIGI = "PVGBS1HSMJS9"
+CompositeFigi = "PVGBS1HSMJS9"
 
-[["SHY+".Source]]
-Symbol = "FRED: DGS1 + DGS2 + DGS3"
-From = 1976-06-02
-To = 1991-10-28
-Sources = ["https://fred.stlouisfed.org/series/DGS1", "https://fred.stlouisfed.org/series/DGS2", "https://fred.stlouisfed.org/series/DGS3"]
+    [["SHY+".Components]]
+    Symbol = "FRED: DGS1 + DGS2 + DGS3"
+    Start = 1976-06-02
+    End = 1991-10-28
+    FileName = "fred-treasury-1-to-3-yrs.csv"
+    Sources = ["https://fred.stlouisfed.org/series/DGS1", "https://fred.stlouisfed.org/series/DGS2", "https://fred.stlouisfed.org/series/DGS3"]
 
-[["SHY+".Source]]
-Symbol = "VFISX"
-From = 1991-10-29
-To = 2002-07-26
-Sources = ["https://api.tiingo.com/tiingo/daily/VFISX/prices"]
+    [["SHY+".Components]]
+    Symbol = "VFISX"
+    Start = 1991-10-29
+    End = 2002-07-26
+    CompositeFigi = "BBG000BGK829"
+    Sources = ["https://api.tiingo.com/tiingo/daily/VFISX/prices"]
 
-[["SHY+".Source]]
-Symbol = "SHY"
-From = 2002-07-29
-Sources = ["https://api.tiingo.com/tiingo/daily/SHY/prices"]
+    [["SHY+".Components]]
+    Symbol = "SHY"
+    Start = 2002-07-29
+    CompositeFIgi = "BBG000NTFYM5"
+    Sources = ["https://api.tiingo.com/tiingo/daily/SHY/prices"]
 
 
 ["IEI+"]
@@ -33,23 +36,26 @@ Symbol = "IEI+"
 Name = "Treasuries 3-7 Years"
 Category = "Intermediate-Term Bond"
 StartDate = 1969-07-02
-FIGI = "PVGVW0YW6FZ9"
+CompositeFigi = "PVGVW0YW6FZ9"
 
-[["IEI+".Source]]
-Symbol = "FRED: DGS3 + DGS5 + DGS7"
-From = 1969-07-02
-To = 1991-10-28
-Sources = ["https://fred.stlouisfed.org/series/DGS3", "https://fred.stlouisfed.org/series/DGS5", "https://fred.stlouisfed.org/series/DGS7"]
+    [["IEI+".Components]]
+    Symbol = "FRED: DGS3 + DGS5 + DGS7"
+    Start = 1969-07-02
+    End = 1991-10-28
+    FileName = "fred-treasury-3-to-7-yrs.csv"
+    Sources = ["https://fred.stlouisfed.org/series/DGS3", "https://fred.stlouisfed.org/series/DGS5", "https://fred.stlouisfed.org/series/DGS7"]
 
-[["IEI+".Source]]
-Symbol = "VFITX"
-From = 1991-10-29
-To = 2007-01-11
-Sources = ["https://api.tiingo.com/tiingo/daily/VFITX/prices"]
+    [["IEI+".Components]]
+    Symbol = "VFITX"
+    Start = 1991-10-29
+    End = 2007-01-11
+    CompositeFigi = "BBG000BGK7V9"
+    Sources = ["https://api.tiingo.com/tiingo/daily/VFITX/prices"]
 
-[["IEI+".Source]]
-Symbol = "IEI"
-From = 2007-01-12
+    [["IEI+".Components]]
+    Symbol = "IEI"
+    Start = 2007-01-12
+    CompositeFigi = "BBG000QN0RR1"
 
 
 ["IEF+"]
@@ -57,17 +63,19 @@ Symbol = "IEF+"
 Name = "Treasuries 7-10 Years"
 Category = "Intermediate-Term Bond"
 StartDate = 1969-07-02
-FIGI = "PVG90PVRWZN4"
+CompositeFigi = "PVG90PVRWZN4"
 
-[["IEF+".Source]]
+[["IEF+".Components]]
 Symbol = "FRED: DGS7 + DGS10"
-From = 1969-07-02
-To = 2002-07-28
+Start = 1969-07-02
+End = 2002-07-28
+FileName = "fred-treasury-7-to-10-yrs.csv"
 Sources = ["https://fred.stlouisfed.org/series/DGS7", "https://fred.stlouisfed.org/series/DGS10"]
 
-[["IEF+".Source]]
+[["IEF+".Components]]
 Symbol = "IEF"
-From = 2002-07-29
+Start = 2002-07-29
+CompositeFigi = "BBG000BHR296"
 Sources = ["https://api.tiingo.com/tiingo/daily/IEF/prices"]
 
 
@@ -76,18 +84,20 @@ Symbol = "GNMA+"
 Name = "GNMA Bonds"
 Category = "Intermediate-Term Bond"
 StartDate = 1980-06-30
-FIGI = "PVGNZ97VGYX1"
+CompositeFigi = "PVGNZ97VGYX1"
 
-[["GNMA+".Source]]
-Symbol = "VFIIX"
-From = 1980-06-30
-To = 2012-02-21
-Sources = ["https://api.tiingo.com/tiingo/daily/VFIIX/prices"]
+    [["GNMA+".Components]]
+    Symbol = "VFIIX"
+    Start = 1980-06-30
+    End = 2012-02-21
+    CompositeFigi = "BBG000BBDQY3"
+    Sources = ["https://api.tiingo.com/tiingo/daily/VFIIX/prices"]
 
-[["GNMA+".Source]]
-Symbol = "GNMA"
-From = 2012-02-22
-Sources = ["https://api.tiingo.com/tiingo/daily/GNMA/prices"]
+    [["GNMA+".Components]]
+    Symbol = "GNMA"
+    Start = 2012-02-22
+    CompositeFigi = "BBG002N8KLH5"
+    Sources = ["https://api.tiingo.com/tiingo/daily/GNMA/prices"]
 
 
 ["TLH+"]
@@ -95,16 +105,18 @@ Symbol = "TLH+"
 Name = "Treasuries 10-20 Years"
 Category = "Long-Term Bond"
 StartDate = 1962-01-03
-FIGI = "PVGNPSP592Y3"
+CompositeFigi = "PVGNPSP592Y3"
 
-[["TLH+".Source]]
-Symbol = "FRED: DGS10 + DGS20"
-From = 1962-01-03
-To = 2007-01-11
+    [["TLH+".Components]]
+    Symbol = "FRED: DGS10 + DGS20"
+    Start = 1962-01-03
+    End = 2007-01-11
+    FileName = "fred-treasury-10-to-20-yrs.csv"
 
-[["TLH+".Source]]
-Symbol = "TLH"
-From = 2007-01-12
+    [["TLH+".Components]]
+    Symbol = "TLH"
+    Start = 2007-01-12
+    CompositeFigi = "BBG000QN16D1"
 
 
 ["TLT+"]
@@ -112,21 +124,24 @@ Symbol = "TLT+"
 Name = "Treasuries 20+ Years"
 Category = "Long-Term Bond"
 StartDate = 1977-02-26
-FIGI = "PVGC99K00WW7"
+CompositeFigi = "PVGC99K00WW7"
 
-[["TLT+".Source]]
-Symbol = "FRED: DGS20 + DGS30"
-From = 1977-02-26
-To = 1986-05-19
+    [["TLT+".Components]]
+    Symbol = "FRED: DGS20 + DGS30"
+    Start = 1977-02-26
+    End = 1986-05-19
+    FileName = "fred-treasury-20-to-30-yrs.csv"
 
-[["TLT+".Source]]
-Symbol = "VUSTX"
-From = 1986-05-20
-To = 2002-07-26
+    [["TLT+".Components]]
+    Symbol = "VUSTX"
+    Start = 1986-05-20
+    End = 2002-07-26
+    CompositeFigi = "BBG000BCKYB1"
 
-[["TLT+".Source]]
-Symbol = "TLT"
-From = 2002-07-29
+    [["TLT+".Components]]
+    Symbol = "TLT"
+    Start = 2002-07-29
+    CompositeFigi = "BBG000BJKYW3"
 
 
 ["HYG+"]
@@ -134,16 +149,18 @@ Symbol = "HYG+"
 Name = "High-Yield Corporate Bond"
 Category = "Corporate Bond"
 StartDate = 1980-01-03
-FIGI = "PVG8713V3MM1"
+CompositeFigi = "PVG8713V3MM1"
 
-[["HYG+".Source]]
-Symbol = "VWEHX"
-From = 1980-01-03
-To = 2007-04-11
+    [["HYG+".Components]]
+    Symbol = "VWEHX"
+    Start = 1980-01-03
+    End = 2007-04-11
+    CompositeFigi = "BBG000BBT0C7"
 
-[["HYG+".Source]]
-Symbol = "HYG"
-From = 2007-04-12
+    [["HYG+".Components]]
+    Symbol = "HYG"
+    Start = 2007-04-12
+    CompositeFigi = "BBG000R2T3H9"
 
 
 ["LQD+"]
@@ -151,21 +168,24 @@ Symbol = "LQD+"
 Name = "Investment Grade Corporate Bonds"
 Category = "Corporate Bond"
 StartDate = 1928-02-02
-FIGI = "PVG0BHK6B9P5"
+CompositeFigi = "PVG0BHK6B9P5"
 
-[["LQD+".Source]]
-Symbol = "FRED: AAA"
-From = 1928-02-02
-To = 1972-01-03
+    [["LQD+".Components]]
+    Symbol = "FRED: Corporate Bond"
+    Start = 1928-02-02
+    End = 1972-01-03
+    FileName = "fred-corporate-bond.csv"
 
-[["LQD+".Source]]
-Symbol = "ACCBX"
-From = 1972-01-04
-To = 2002-07-26
+    [["LQD+".Components]]
+    Symbol = "ACCBX"
+    Start = 1972-01-04
+    End = 2002-07-26
+    CompositeFigi = "BBG000BBCWQ0"
 
-[["LQD+".Source]]
-Symbol = "LQD"
-From = 2002-07-29
+    [["LQD+".Components]]
+    Symbol = "LQD"
+    Start = 2002-07-29
+    CompositeFigi = "BBG000BBV9N3"
 
 
 ["AGG+"]
@@ -173,16 +193,18 @@ Symbol = "AGG+"
 Name = "Aggregate Bond"
 Category = "Total Bond Market"
 StartDate = 1971-10-04
-FIGI = "PVGR8P98HN69"
+CompositeFigi = "PVGR8P98HN69"
 
-[["AGG+".Source]]
-Symbol = "FBNDX"
-From = 1971-10-04
-To = 2003-09-26
+    [["AGG+".Components]]
+    Symbol = "FBNDX"
+    Start = 1971-10-04
+    End = 2003-09-26
+    CompositeFigi = "BBG000BC3NS6"
 
-[["AGG+".Source]]
-Symbol = "AGG"
-From = 2003-09-29
+    [["AGG+".Components]]
+    Symbol = "AGG"
+    Start = 2003-09-29
+    CompositeFigi = "BBG000Q123R0"
 
 # US Equities
 
@@ -191,16 +213,27 @@ Symbol = "SPY+"
 Name = "S&P 500"
 Category = "US Large-Blend"
 StartDate = 1928-01-04
-FIGI = "PVGCXBJGBLX6"
+CompositeFigi = "PVGCXBJGBLX6"
 
-[["SPY+".Source]]
-Symbol = "GSPC"
-From = 1928-01-04
-To = 1993-01-29
+    [["SPY+".Components]]
+    Name = "SP500 Index"
+    Symbol = "GSPC"
+    Start = 1928-01-04
+    End = 1976-08-31
+    FileName = "/Users/jdf/Developer/penny-vault/util/synthetic-asset-history-data/gspc.csv"
 
-[["SPY+".Source]]
-Symbol = "SPY"
-From = 1992-02-01
+    [["SPY+".Components]]
+    Symbol = "VFINX"
+    Name = "VFINX"
+    CompositeFigi = "BBG000BHTMY2"
+    Start = 1976-09-30
+    End = 1993-01-29
+
+    [["SPY+".Components]]
+    Symbol = "SPY"
+    Name = "SPY"
+    CompositeFigi = "BBG000BDTBL9"
+    Start = 1993-02-01
 
 
 ["QQQ+"]
@@ -208,16 +241,18 @@ Symbol = "QQQ+"
 Name = "Nasdaq"
 Category = "US Large-Growth"
 StartDate = 1971-02-08
-FIGI = "PVG0TP2Q1ZR1"
+CompositeFigi = "PVG0TP2Q1ZR1"
 
-[["QQQ+".Source]]
-Symbol = "^IXIC"
-From = 1971-02-08
-To = 1999-03-10
+    [["QQQ+".Components]]
+    Symbol = "^IXIC"
+    Start = 1971-02-08
+    End = 1999-03-10
+    FileName = "ixic.csv"
 
-[["QQQ+".Source]]
-Symbol = "QQQ"
-From = 1999-03-11
+    [["QQQ+".Components]]
+    Symbol = "QQQ"
+    Start = 1999-03-11
+    CompositeFigi = "BBG000BSWKH7"
 
 
 ["IWD+"]
@@ -225,26 +260,30 @@ Symbol = "IWD+"
 Name = "Russell 1000 Value"
 Category = "Large-Cap Value"
 StartDate = 1980-01-03
-FIGI = "PVGCK88VP666"
+CompositeFigi = "PVGCK88VP666"
 
-[["IWD+".Source]]
-Symbol = "DODGX"
-From = 1980-01-03
-To = 1985-12-30
+    [["IWD+".Components]]
+    Symbol = "DODGX"
+    Start = 1980-01-03
+    End = 1985-12-30
+    CompositeFigi = "BBG000BC2SL3"
 
-[["IWD+".Source]]
-Symbol = "FGRIX"
-From = 1985-12-31
-To = 1992-10-30
+    [["IWD+".Components]]
+    Symbol = "FGRIX"
+    Start = 1985-12-31
+    End = 1992-10-30
+    CompositeFigi = "BBG000BBWV99"
 
-[["IWD+".Source]]
-Symbol = "VIVAX"
-From = 1992-11-02
-To = 2000-05-26
+    [["IWD+".Components]]
+    Symbol = "VIVAX"
+    Start = 1992-11-02
+    End = 2000-05-26
+    CompositeFigi = "BBG000BHT2H5"
 
-[["IWD+".Source]]
-Symbol = "IWD"
-From = 2000-05-30
+    [["IWD+".Components]]
+    Symbol = "IWD"
+    Start = 2000-05-30
+    CompositeFigi = "BBG000CG9VP5"
 
 
 ["IWF+"]
@@ -252,16 +291,18 @@ Symbol = "IWF+"
 Name = "Russell 1000 Growth"
 Category = "Large-Cap Growth"
 StartDate = 1979-01-03
-FIGI = "PVG3D7DMX6N6"
+CompositeFigi = "PVG3D7DMX6N6"
 
-[["IWF+".Source]]
-Symbol = "^RLGTR"
-From = 1979-01-03
-To = 2000-05-26
+    [["IWF+".Components]]
+    Symbol = "^RLGTR"
+    Start = 1979-01-03
+    End = 2000-05-26
+    FileName = "russell-1000-growth.csv"
 
-[["IWF+".Source]]
-Symbol = "IWF"
-From = 2000-05-30
+    [["IWF+".Components]]
+    Symbol = "IWF"
+    Start = 2000-05-30
+    CompositeFigi = "BBG000BTR7Z0"
 
 
 ["IWR+"]
@@ -269,50 +310,56 @@ Symbol = "IWR+"
 Name = "Russell Mid-Cap"
 Category = "Mid-Cap Blend"
 StartDate = 1979-01-03
-FIGI = "PVGK85B5MYK9"
+CompositeFigi = "PVGK85B5MYK9"
 
-[["IWR+".Source]]
-Symbol = "^RMCTR"
-From = 1979-01-03
-To = 2001-07-20
+    [["IWR+".Components]]
+    Symbol = "^RMCTR"
+    Start = 1979-01-03
+    End = 2001-07-20
+    FileName = "russell-midcap.csv"
 
-[["IWR+".Source]]
-Symbol = "IWR"
-From = 2001-07-23
+    [["IWR+".Components]]
+    Symbol = "IWR"
+    Start = 2001-07-23
+    CompositeFigi = "BBG000JWXHK2"
 
 
 ["IWP+"]
 Symbol = "IWP+"
-Name = "Mid-Cap Growth"
+Name = "Russell Mid-Cap Growth"
 Category = "Mid-Cap Growth"
 StartDate = 1985-12-31
-FIGI = "PVGZ6FXR3YN8"
+CompositeFigi = "PVGZ6FXR3YN8"
 
-[["IWP+".Source]]
-Symbol = "^RDGTR"
-From = 1985-12-31
-To = 2001-08-01
+    [["IWP+".Components]]
+    Symbol = "^RDGTR"
+    Start = 1985-12-31
+    End = 2001-08-01
+    FileName = "russell-midcap-growth.csv"
 
-[["IWP+".Source]]
-Symbol = "IWP"
-From = 2001-08-02
+    [["IWP+".Components]]
+    Symbol = "IWP"
+    Start = 2001-08-02
+    CompositeFigi = "BBG000BW05W9"
 
 
 ["IWS+"]
 Symbol = "IWS+"
-Name = "Mid-Cap Value"
+Name = "Russell Mid-Cap Value"
 Category = "Mid-Cap Value"
 StartDate = 1985-12-31
-FIGI = "PVGCDG16MSW1"
+CompositeFigi = "PVGCDG16MSW1"
 
-[["IWS+".Source]]
-Symbol = "^RWMTR"
-From = 1985-12-31
-To = 2001-07-24
+    [["IWS+".Components]]
+    Symbol = "^RWMTR"
+    Start = 1985-12-31
+    End = 2001-07-24
+    FileName = "russell-midcap-value.csv"
 
-[["IWS+".Source]]
-Symbol = "IWS"
-From = 2001-07-25
+    [["IWS+".Components]]
+    Symbol = "IWS"
+    Start = 2001-07-25
+    CompositeFigi = "BBG000JWZ6F0"
 
 
 ["IWM+"]
@@ -320,21 +367,24 @@ Symbol = "IWM+"
 Name = "Russell 2000"
 Category = "US Small-Cap"
 StartDate = 1975-01-03
-FIGI = "PVGLD1WBNGD4"
+CompositeFigi = "PVGLD1WBNGD4"
 
-[["IWM+".Source]]
-Symbol = "Independence International Small Cap Index"
-From = 1975-01-03
-To = 1980-01-02
+    [["IWM+".Components]]
+    Symbol = "Independence International Small Cap Index"
+    Start = 1975-01-03
+    End = 1980-01-02
+    FileName = "iia-small-us.csv"
 
-[["IWM+".Source]]
-Symbol = "^RUTTR"
-From = 1978-12-28
-To = 2000-05-26
+    [["IWM+".Components]]
+    Symbol = "^RUTTR"
+    Start = 1978-12-28
+    End = 2000-05-26
+    FileName = "russell-2000.csv"
 
-[["IWM+".Source]]
-Symbol = "IWM"
-From = 2000-05-30
+    [["IWM+".Components]]
+    Symbol = "IWM"
+    Start = 2000-05-30
+    CompositeFigi = "BBG000CGC9C4"
 
 
 ["IWN+"]
@@ -342,16 +392,18 @@ Symbol = "IWN+"
 Name = "Small-Cap Value"
 Category = "Small-Cap Value"
 StartDate = 1978-12-29
-FIGI = "PVGMTG00SVM4"
+CompositeFigi = "PVGMTG00SVM4"
 
-[["IWN+".Source]]
-Symbol = "^RUJTR"
-From = 1978-12-29
-To = 2000-07-28
+    [["IWN+".Components]]
+    Symbol = "^RUJTR"
+    Start = 1978-12-29
+    End = 2000-07-28
+    FileName = "russell-2000-value.csv"
 
-[["IWN+".Source]]
-Symbol = "IWN"
-From = 2000-07-31
+    [["IWN+".Components]]
+    Symbol = "IWN"
+    Start = 2000-07-31
+    CompositeFigi = "BBG000C16Z27"
 
 
 ["IWO+"]
@@ -359,16 +411,18 @@ Symbol = "IWO+"
 Name = "Small-Cap Growth"
 Category = "Small-Cap Growth"
 StartDate = 1978-12-29
-FIGI = "PVG491M93Y74"
+CompositeFigi = "PVG491M93Y74"
 
-[["IWO+".Source]]
-Symbol = "^RUOTR"
-From = 1978-12-29
-To = 2000-07-28
+    [["IWO+".Components]]
+    Symbol = "^RUOTR"
+    Start = 1978-12-29
+    End = 2000-07-28
+    FileName = "russell-2000-growth.csv"
 
-[["IWO+".Source]]
-Symbol = "IWO"
-From = 2007-07-31
+    [["IWO+".Components]]
+    Symbol = "IWO"
+    Start = 2007-07-31
+    CompositeFigi = "BBG000C17LW4"
 
 # International
 
@@ -377,27 +431,31 @@ Symbol = "VGK+"
 Name = "FTSE Europe"
 Category = "International Europe"
 StartDate = 1975-01-03
-FIGI = "PVG4NCKGTZS6"
+CompositeFigi = "PVG4NCKGTZS6"
 
-[["VGK+".Source]]
-Symbol = "Independence International Europe Index"
-From = 1975-01-03
-To = 1990-06-18
-Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaeurm.txt"]
+    [["VGK+".Components]]
+    Symbol = "Independence International Europe Index"
+    Start = 1975-01-03
+    End = 1990-06-18
+    FileName = "iia-europe.csv"
+    Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaeurm.txt"]
 
-[["VGK+".Source]]
-Symbol = "VEURX"
-From = 1990-06-19
-To = 2001-08-13
+    [["VGK+".Components]]
+    Symbol = "VEURX"
+    Start = 1990-06-19
+    End = 2001-08-13
+    CompositeFigi = "BBG000BD9632"
 
-[["VGK+".Source]]
-Symbol = "VEUSX"
-From = 2001-08-14
-To = 2005-03-10
+    [["VGK+".Components]]
+    Symbol = "VEUSX"
+    Start = 2001-08-14
+    End = 2005-03-10
+    CompositeFigi = "BBG000BYKW63"
 
-[["VGK+".Source]]
-Symbol = "VGK"
-From = 2005-03-11
+    [["VGK+".Components]]
+    Symbol = "VGK"
+    Start = 2005-03-11
+    CompositeFigi = "BBG000HT8SM3"
 
 
 ["SCZ+"]
@@ -405,22 +463,25 @@ Symbol = "SCZ+"
 Name = "International Small-Cap"
 Category = "International Small-Cap Blend"
 StartDate = 1975-01-03
-FIGI = "PVGKG08C5W96"
+CompositeFigi = "PVGKG08C5W96"
 
-[["SCZ+".Source]]
-Symbol = "Independence International Small Cap Ex-US"
-From = 1975-01-03
-To = 1996-11-04
-Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaints.txt"]
+    [["SCZ+".Components]]
+    Symbol = "Independence International Small Cap Ex-US"
+    Start = 1975-01-03
+    End = 1996-11-04
+    FileName = "iia-international-small.csv"
+    Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaints.txt"]
 
-[["SCZ+".Source]]
-Symbol = "VINEX"
-From = 1996-11-05
-To = 2007-12-12
+    [["SCZ+".Components]]
+    Symbol = "VINEX"
+    Start = 1996-11-05
+    End = 2007-12-12
+    CompositeFigi = "BBG000GP5R56"
 
-[["SCZ+".Source]]
-Symbol = "SCZ"
-From = 2007-12-13
+    [["SCZ+".Components]]
+    Symbol = "SCZ"
+    Start = 2007-12-13
+    CompositeFigi = "BBG000T1G7X6"
 
 
 ["FSG+"]
@@ -428,22 +489,25 @@ Symbol = "FSG+"
 Name = "International Small-Cap Growth"
 Category = "International Small-Cap Growth"
 StartDate = 1975-01-03
-FIGI = "PVGXSMCNRD08"
+CompositeFigi = "PVGXSMCNRD08"
 
-[["FSG+".Source]]
-Symbol = "Independence International Small Cap Growth Ex-US"
-From = 1975-01-03
-To = 1989-01-03
-Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaintsg.txt"]
+    [["FSG+".Components]]
+    Symbol = "Independence International Small Cap Growth Ex-US"
+    Start = 1975-01-03
+    End = 1989-01-03
+    FileName = "iia-international-sg.csv"
+    Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiaintsg.txt"]
 
-[["FSG+".Source]]
-Symbol = "PRIDX"
-From = 1989-01-04
-To = 2016-01-04
+    [["FSG+".Components]]
+    Symbol = "PRIDX"
+    Start = 1989-01-04
+    End = 2016-01-04
+    CompositeFigi = "BBG000BBVR08"
 
-[["FSG+".Source]]
-Symbol = "WCMSX"
-From = 2016-01-05
+    [["FSG+".Components]]
+    Symbol = "WCMSX"
+    Start = 2016-01-05
+    CompositeFigi = "BBG00B6G7DJ7"
 
 
 ["EEM+"]
@@ -451,21 +515,24 @@ Symbol = "EEM+"
 Name = "Emerging Markets"
 Category = "Emerging Markets"
 StartDate = 1989-09-01
-FIGI = "PVGG715YBQJ0"
+CompositeFigi = "PVGG715YBQJ0"
 
-[["EEM+".Source]]
-Symbol = "MADCX"
-From = 1989-09-01
-To = 1994-04-22
+    [["EEM+".Components]]
+    Symbol = "MADCX"
+    Start = 1989-09-01
+    End = 1994-04-22
+    CompositeFigi = "BBG000BN3FV5"
 
-[["EEM+".Source]]
-Symbol = "DFEMX"
-From = 1994-04-25
-To = 2003-04-14
+    [["EEM+".Components]]
+    Symbol = "DFEMX"
+    Start = 1994-04-25
+    End = 2003-04-14
+    CompositeFigi = "BBG000F7RND3"
 
-[["EEM+".Source]]
-Symbol = "EEM"
-From = 2003-04-15
+    [["EEM+".Components]]
+    Symbol = "EEM"
+    Start = 2003-04-15
+    CompositeFigi = "BBG000M0P5L2"
 
 
 ["EWJ+"]
@@ -473,22 +540,25 @@ Symbol = "EWJ+"
 Name = "Japan Fund"
 Category = "International Japan"
 StartDate = 1975-01-03
-FIGI = "PVG3LL7S8FV5"
+CompositeFigi = "PVG3LL7S8FV5"
 
-[["EWJ+".Source]]
-Symbol = "Independence International Japan Index"
-From = 1975-01-03
-To = 1992-01-02
-Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiajpym.txt"]
+    [["EWJ+".Components]]
+    Symbol = "Independence International Japan Index"
+    Start = 1975-01-03
+    End = 1992-01-02
+    FileName = "iia-japan-small.csv"
+    Sources = ["https://web.stanford.edu/~wfsharpe/rets/iiajpym.txt"]
 
-[["EWJ+".Source]]
-Symbol = "PRJPX"
-From = 1992-01-03
-To = 1996-04-01
+    [["EWJ+".Components]]
+    Symbol = "PRJPX"
+    Start = 1992-01-03
+    End = 1996-04-01
+    CompositeFigi = "BBG000BH0T87"
 
-[["EWJ+".Source]]
-Symbol = "EWJ"
-From = 1996-04-02
+    [["EWJ+".Components]]
+    Symbol = "EWJ"
+    Start = 1996-04-02
+    CompositeFigi = "BBG000BK38F5"
 
 # Alternatives
 
@@ -497,21 +567,24 @@ Symbol = "IYR+"
 Name = "Real Estate"
 Category = "US Real Estate"
 StartDate = 1980-01-30
-FIGI = "PVGVN570L7Y5"
+CompositeFigi = "PVGVN570L7Y5"
 
-[["IYR+".Source]]
-Symbol = "STMDX"
-From = 1980-01-30
-To = 1996-05-13
+    [["IYR+".Components]]
+    Symbol = "STMDX"
+    Start = 1980-01-30
+    End = 1996-05-13
+    CompositeFigi = "BBG000BCJF51"
 
-[["IYR+".Source]]
-Symbol = "VGSIX"
-From = 1996-05-14
-To = 2000-06-19
+    [["IYR+".Components]]
+    Symbol = "VGSIX"
+    Start = 1996-05-14
+    End = 2000-06-19
+    CompositeFigi = "BBG000GRLB95"
 
-[["IYR+".Source]]
-Symbol = "IYR"
-From = 2000-06-20
+    [["IYR+".Components]]
+    Symbol = "IYR"
+    Start = 2000-06-20
+    CompositeFigi = "BBG000BXW687"
 
 # Commodities
 
@@ -520,17 +593,19 @@ Symbol = "GSG+"
 Name = "Commodities"
 Category = "Commodities"
 StartDate = 1970-01-02
-FIGI = "PVGW9LGNKY45"
+CompositeFigi = "PVGW9LGNKY45"
 
-[["GSG+".Source]]
-Symbol = "S&P GSCI"
-From = 1970-01-02
-To = 2006-07-21
-Sources = ["https://tradingeconomics.com/commodity/gsci"]
+    [["GSG+".Components]]
+    Symbol = "S&P GSCI"
+    Start = 1970-01-02
+    End = 2006-07-21
+    FileName = "gsci.csv"
+    Sources = ["https://tradingeconomics.com/commodity/gsci"]
 
-[["GSG+".Source]]
-Symbol = "GSG"
-From = 2006-07-24
+    [["GSG+".Components]]
+    Symbol = "GSG"
+    Start = 2006-07-24
+    CompositeFigi = "BBG000PVYFK0"
 
 
 ["GLD+"]
@@ -538,13 +613,15 @@ Symbol = "GLD+"
 Name = "Gold"
 Category = "Commodities"
 StartDate = 1960-02-29
-FIGI = "PVGL2ZZ1RYP6"
+CompositeFigi = "PVGL2ZZ1RYP6"
 
-[["GLD+".Source]]
-Symbol = "INIVX"
-From = 1960-02-29
-To = 2004-11-18
+    [["GLD+".Components]]
+    Symbol = "INIVX"
+    Start = 1960-02-29
+    End = 2004-11-18
+    CompositeFigi = "BBG000BC7K53"
 
-[["GLD+".Source]]
-Symbol = "GLD"
-From = 2004-11-19
+    [["GLD+".Components]]
+    Symbol = "GLD"
+    Start = 2004-11-19
+    CompositeFigi = "BBG000CRF6Q8"
