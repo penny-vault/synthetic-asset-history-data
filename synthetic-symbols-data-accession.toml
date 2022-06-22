@@ -220,7 +220,7 @@ CompositeFigi = "PVGCXBJGBLX6"
     Symbol = "GSPC"
     Start = 1928-01-04
     End = 1976-08-31
-    FileName = "/Users/jdf/Developer/penny-vault/util/synthetic-asset-history-data/gspc.csv"
+    FileName = "gspc.csv"
 
     [["SPY+".Components]]
     Symbol = "VFINX"
